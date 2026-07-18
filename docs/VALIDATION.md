@@ -20,4 +20,11 @@ Validated on July 18, 2026 before v1.0.0 publication.
 
 ## Deployment verification
 
-Pending GitHub Pages publication. The deployed URL, HTTP checks, repeat browser result, and published commit identity will be added before v1.0.0 is tagged.
+Verified on July 18, 2026 at `https://jubjub-cpu.github.io/evaldeck-studio/`.
+
+- GitHub Pages build: passed.
+- Deployed browser suite: passed with the same 12-case, four-rubric, blocked-gate, override, approval, chart, filter, JSON, CSV, JSONL import, keyboard, and recovery checks as local.
+- Deployed browser health: zero console errors and zero failed normal requests.
+- Public page and 12-case suite: HTTP 200.
+- Published page title: `EvalDeck Studio | AI Regression Workbench`.
+- Published commit identity: author and committer use the GitHub no-reply address.
