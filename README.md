@@ -2,7 +2,7 @@
 
 EvalDeck Studio is a developer-facing AI output evaluation and regression workbench. It compares baseline and candidate outputs over a fixed synthetic suite, exposes four transparent rubrics, measures slice regressions and reference disagreement, and keeps release approval with a human evaluator.
 
-[Live demo](https://jubjub-cpu.github.io/evaldeck-studio/) | [Portfolio](https://jubjub-cpu.github.io/gabe-ai-product-portfolio/) | [v1.0.0 release](https://github.com/jubjub-cpu/evaldeck-studio/releases/tag/v1.0.0)
+[Live demo](https://jubjub-cpu.github.io/evaldeck-studio/) | [Portfolio](https://jubjub-cpu.github.io/gabe-ai-product-portfolio/) | [v1.0.1 release](https://github.com/jubjub-cpu/evaldeck-studio/releases/tag/v1.0.1)
 
 ## Business Problem
 
@@ -32,7 +32,7 @@ AI product engineers, prompt engineers, evaluation specialists, and QA leads.
 - Weighted total: 30% quality, 30% grounding, 25% safety, 15% format.
 - Reference disagreement: a 20-point or larger gap from the synthetic human reference.
 
-The method is deterministic and explainable. No hosted judge model runs in v1.0.0.
+The method is deterministic and explainable. No hosted judge model runs in the static demo.
 
 ## Architecture
 

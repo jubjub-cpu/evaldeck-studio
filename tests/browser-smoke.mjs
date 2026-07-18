@@ -35,6 +35,15 @@ async function approveWithOverride(page) {
   assert.match(await page.locator("#decision-summary").innerText(), /approved by the human evaluator/i);
 }
 
+async function waitForCaseCount(page, expected, timeout = 5000) {
+  const deadline = Date.now() + timeout;
+  while (Date.now() < deadline) {
+    if (await page.locator("[data-case]").count() === expected) return;
+    await new Promise((resolve) => setTimeout(resolve, 50));
+  }
+  assert.equal(await page.locator("[data-case]").count(), expected);
+}
+
 let browser;
 try {
   await ready();
@@ -77,6 +86,7 @@ try {
   await page.screenshot({ path: desktopShot, fullPage: true });
   await page.locator("#jsonl-import").setInputFiles(importPath);
   await page.locator("#suite-label").getByText(/2 cases/).waitFor({ state: "visible" });
+  await waitForCaseCount(page, 2);
   assert.equal(await page.locator("[data-case]").count(), 2);
   await desktop.close();
 

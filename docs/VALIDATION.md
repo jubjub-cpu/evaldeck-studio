@@ -1,5 +1,13 @@
 # Validation Evidence
 
+## v1.0.1 hardening
+
+Validated on July 18, 2026.
+
+- Stabilized the deployed JSONL-import assertion by waiting for the rendered case list, not only the earlier suite-label update.
+- Repository, logic, local browser, and deployed browser checks passed.
+- Desktop, mobile, keyboard, import, export, override, recovery, console, request, and privacy checks remain covered.
+
 ## Local release candidate
 
 Validated on July 18, 2026 before v1.0.0 publication.
@@ -12,6 +20,7 @@ Validated on July 18, 2026 before v1.0.0 publication.
 - Loading failure: passed. A failed suite request produces a visible recovery state and Retry control.
 - Browser health: zero console errors and zero failed normal requests.
 - Privacy scan: passed. No personal email address, API key, GitHub token, private key, customer output, model credential, or production data is present.
+- Local axe-core audit: passed at desktop and mobile viewports with zero violations.
 
 ## Visual evidence
 
