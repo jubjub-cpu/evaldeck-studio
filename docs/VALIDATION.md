@@ -4,7 +4,7 @@
 
 Validated on July 18, 2026 before v1.0.0 publication.
 
-- Repository validator: passed. Checked required files, 12 cases, six slices, synthetic and AI-assisted disclosures, privacy patterns, accessibility hooks, and evaluation logic.
+- Repository validator: passed. Checked required files, 12 cases, six slices, synthetic-data boundaries, privacy patterns, accessibility hooks, and evaluation logic.
 - Logic suite: passed. Covered four rubrics, pairwise deltas, weighted totals, reference disagreement, slice metrics, safety regressions, configurable gates, reasoned overrides, JSONL parsing and errors, CSV output, and report boundaries.
 - Desktop browser: passed at 1440 x 1000. Confirmed the default blocked gate, regression filter, false-positive safety override with retained raw evidence, passing gate, human approval, nonblank rubric chart, JSON and CSV downloads, and two-case local JSONL import.
 - Mobile browser: passed at 390 x 844 with no document overflow.

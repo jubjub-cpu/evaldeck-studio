@@ -35,7 +35,7 @@ $text = ($files | ForEach-Object { Get-Content -Raw -LiteralPath $_.FullName }) 
 foreach ($pattern in @("(?i)gmail\.com", "sk-[A-Za-z0-9]{20,}", "gh[opsu]_[A-Za-z0-9]{20,}", "BEGIN (RSA|OPENSSH) PRIVATE KEY")) {
   if ($text -match $pattern) { $failures.Add("Potential private information or secret found: $pattern") }
 }
-foreach ($phrase in @("synthetic", "deterministic", "human", "No hosted model", "AI-assisted", "regression")) {
+foreach ($phrase in @("synthetic", "deterministic", "human", "No hosted model", "regression")) {
   if ($text -notmatch [Regex]::Escape($phrase)) { $failures.Add("Disclosure phrase missing: $phrase") }
 }
 

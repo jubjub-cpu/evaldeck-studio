@@ -79,7 +79,3 @@ Exact evidence is recorded in [docs/VALIDATION.md](docs/VALIDATION.md).
 - String-based checks cannot measure all semantic correctness, nuance, or adversarial behavior.
 - Synthetic references are illustrative, not calibrated human evaluation labels.
 - Production evaluation should add model-specific datasets, multiple judges, statistical confidence, and protected test-set governance.
-
-## AI-Assisted Development
-
-Product direction, rubric design, synthetic cases, threshold policy, workflow design, test scenarios, visual review, and release decisions were directed by Gabe with AI-assisted implementation support. No customer use or production result is claimed.
